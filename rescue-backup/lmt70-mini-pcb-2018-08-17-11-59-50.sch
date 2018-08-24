@@ -1,6 +1,36 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lmt70
 LIBS:lmt70-mini-pcb-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L lmt70:LMT70 U1
+L LMT70 U1
 U 1 1 58DEAA37
 P 3800 3300
 F 0 "U1" H 3800 3050 60  0000 C CNN
@@ -26,7 +56,7 @@ F 3 "" H 3800 3300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L C C1
 U 1 1 58DEAA4E
 P 3800 2950
 F 0 "C1" V 3750 3000 50  0000 L CNN
@@ -37,7 +67,7 @@ F 3 "" H 3800 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L lmt70-mini-pcb-rescue:CONN_01X04 P1
+L CONN_01X04 P1
 U 1 1 58DEAAA6
 P 3800 2200
 F 0 "P1" H 3800 2450 50  0000 C CNN
@@ -48,7 +78,7 @@ F 3 "" H 3800 2200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG01
+L PWR_FLAG #FLG01
 U 1 1 58DEAD1C
 P 4100 2700
 F 0 "#FLG01" H 4100 2795 50  0001 C CNN
@@ -59,7 +89,7 @@ F 3 "" H 4100 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG02
+L PWR_FLAG #FLG02
 U 1 1 58DEAD39
 P 3500 2700
 F 0 "#FLG02" H 3500 2795 50  0001 C CNN
@@ -70,18 +100,18 @@ F 3 "" H 3500 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2700 3350 2950
+	3350 2700 3350 3250
 Wire Wire Line
-	4250 2700 4250 2950
+	4250 2700 4250 3250
 Connection ~ 4100 2700
 Connection ~ 3500 2700
 Wire Wire Line
-	3850 2700 4100 2700
+	3850 2700 4250 2700
 Wire Wire Line
 	3850 2400 3850 2700
 Connection ~ 4250 2950
 Wire Wire Line
-	3350 2700 3500 2700
+	3350 2700 3750 2700
 Wire Wire Line
 	4400 2400 3950 2400
 Wire Wire Line
@@ -101,12 +131,4 @@ Wire Wire Line
 	3950 2950 4250 2950
 Wire Wire Line
 	3650 2950 3350 2950
-Wire Wire Line
-	4100 2700 4250 2700
-Wire Wire Line
-	3500 2700 3750 2700
-Wire Wire Line
-	4250 2950 4250 3250
-Wire Wire Line
-	3350 2950 3350 3250
 $EndSCHEMATC

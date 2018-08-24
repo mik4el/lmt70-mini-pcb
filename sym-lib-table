@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name lmt70-mini-pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/lmt70-mini-pcb-rescue.lib)(options "")(descr ""))
+  (lib (name lmt70)(type Legacy)(uri ${KIPRJMOD}/lmt70.lib)(options "")(descr ""))
+)
